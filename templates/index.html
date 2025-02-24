@@ -11,10 +11,10 @@
     <div class="chat-container">
         <h2>AI Chatbot</h2>
         <div id="chat-box"></div>
-        <form id="chat-form">
+        <form id="chat-form" class="input-container">
             <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
             <button type="submit" id="send-button">Send</button>
-        </form>
+        </form>        
     </div>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
 
