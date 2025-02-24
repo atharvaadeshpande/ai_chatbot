@@ -1,7 +1,7 @@
 body {
     font-family: 'Times New Roman', Times, serif;
     background-image: url('bg.jpg');
-    background-size: cover;
+    background-size: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +9,12 @@ body {
 }
 
 .chat-container {
-    width: 400px;
-    background: white;
+    width: 50%;
+    max-width: 600px;
+    background: #f8f9fa;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #chat-box {
@@ -41,4 +42,39 @@ input, button {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+}
+footer {
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        width: 90%;  /* Make the chat box wider on small screens */
+        padding: 15px; 
+    }
+
+    .footer-content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .chat-container {
+        width: 70%;
+    }
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
 }
